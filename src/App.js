@@ -6,7 +6,7 @@ import Product from './components/Product';
 
 function App() {
 
-  //Make 
+  //Make product list
   const [ products, setProduct ] = useState([
     {id: 1, name: 'Curso ReactJS', price: 100},
     {id: 2, name: 'Curso NodeJS', price: 150},
