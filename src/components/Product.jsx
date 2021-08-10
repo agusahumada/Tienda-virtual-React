@@ -1,12 +1,16 @@
 import React from 'react';
 
-const Product = ({product}) => {
+const Product = ({product, cart, addProduct, products}) => {
 
     const { name, price, id } = product;
 
     //Add product to cart
     const selectProduct = id => {
-        console.log('comprando...', id);
+        const product = products.filter(product => product.id === id)[0];
+        addProduct([
+            ...cart,
+            product
+        ]);
     }
 
     return(
