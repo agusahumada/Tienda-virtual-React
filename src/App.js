@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Product from "./components/Product";
+import Cart from "./components/Cart";
 
 function App() {
   //Make product list
@@ -19,7 +20,6 @@ function App() {
   return (
     <Fragment>
       <Header titulo="Tienda Virtual" />
-      <Footer fecha={fecha} />
       {products.map((product) => (
         <Product
           key={product.id}
@@ -29,6 +29,8 @@ function App() {
           addProduct={addProduct}
         />
       ))}
+      <Cart cart={cart} addProduct={addProduct} />
+      <Footer fecha={fecha} />
     </Fragment>
   );
 }
