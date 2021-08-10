@@ -1,4 +1,5 @@
 import React from "react";
+import "./components.css"
 
 const Product = ({ product, cart, addProduct, products }) => {
   const { name, price, id } = product;
@@ -17,7 +18,7 @@ const Product = ({ product, cart, addProduct, products }) => {
   };
 
   return (
-    <div>
+    <div className="product-styles">
       <h2>{name}</h2>
       <p>${price}</p>
       {products ? (

@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: black;
+}
+
+.product-styles{
+    margin-left: 100px;
+ }
+
+.cart{
+    position: fixed;
+    top: 101px;
+    right: 0px;
+    width: 400px;
+}
+
+.footer{
+    margin-top: 75px;
+    padding-left: 33px;
+}

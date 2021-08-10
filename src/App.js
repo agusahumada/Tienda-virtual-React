@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Product from "./components/Product";
 import Cart from "./components/Cart";
+import "./components/components.css";
 
 function App() {
   //Make product list
@@ -18,8 +19,8 @@ function App() {
   const fecha = new Date().getFullYear();
 
   return (
-    <Fragment>
-      <Header titulo="Tienda Virtual" />
+    <Fragment className="header">
+      <Header titulo="TIENDA VIRTUAL"/>
       {products.map((product) => (
         <Product
           key={product.id}
