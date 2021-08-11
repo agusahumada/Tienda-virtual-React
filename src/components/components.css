@@ -5,14 +5,10 @@
     color: black;
 }
 
-.product-styles{
-    margin-left: 100px;
- }
-
 .cart{
     position: fixed;
-    top: 101px;
-    right: 0px;
+    top: 26px;
+    right: -138px;
     width: 400px;
 }
 

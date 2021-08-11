@@ -8,10 +8,10 @@ import "./components/components.css";
 function App() {
   //Make product list
   const [products, setProduct] = useState([
-    { id: 1, name: "Curso ReactJS", price: 100 },
-    { id: 2, name: "Curso NodeJS", price: 150 },
-    { id: 3, name: "Curso VuelJS", price: 100 },
-    { id: 4, name: "Curso Angular", price: 100 },
+    { id: 1, name: "Curso ReactJS", price: 9.99 },
+    { id: 2, name: "Curso NodeJS", price: 9.99 },
+    { id: 3, name: "Curso VuelJS", price: 9.99 },
+    { id: 4, name: "Curso Angular", price: 9.99 },
   ]);
 
   const [cart, addProduct] = useState([]);
@@ -19,8 +19,8 @@ function App() {
   const fecha = new Date().getFullYear();
 
   return (
-    <Fragment className="header">
-      <Header titulo="TIENDA VIRTUAL"/>
+    <Fragment>
+      <Header titulo="TIENDA VIRTUAL" className="bg-light"/>
       {products.map((product) => (
         <Product
           key={product.id}

@@ -4,20 +4,23 @@ import Product from "./Product";
 
 const Cart = ({ cart, addProduct }) => (
   <div className="cart">
-    <h2>Carrito de compras</h2>
+    <h5 className="cart-title">Carrito de compras {cart.length}</h5>
+    <div className="cart-content">
 
-    {cart.length === 0 ? (
-      <p>No hay elementos en el carrito</p>
-    ) : (
-      cart.map((product) => (
-        <Product
-          key={product.id}
-          product={product}
-          cart={cart}
-          addProduct={addProduct}
-        />
-      ))
-    )}
+      {cart.length === 0 ? (
+        <p>No hay elementos en el carrito</p>
+      ) : (
+        cart.map((product) => (
+          <Product
+            key={product.id}
+            product={product}
+            cart={cart}
+            addProduct={addProduct}
+          />
+        ))
+      )}
+
+    </div>
   </div>
 );
 
